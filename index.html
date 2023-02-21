@@ -92,11 +92,8 @@
                                     class="lni lni-linkedin-original"></i></a></li>
                     </ul>
                     <!--button-->
-<<<<<<< HEAD
                     <div><a href="shahanish1.netlify.app" class="btn btn-default">Hire me</a></div>
-=======
-                    <div><a href="vcard-portfolio/index.html" class="btn btn-default">Hire me</a></div>
->>>>>>> 7b17ca6fc93c573f67a94047e37dbe4ddf8dd9cd
+
                     <!--scroll down mouse wheel-->
 
                     <div class="scroll-down">
@@ -760,35 +757,7 @@
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
-<<<<<<< HEAD
-    //function to send the message when click on button send
-        const form = document.querySelector(".contact-form");
 
-        function Mail(e) {
-            e.preventDefault();
-
-            const email = document.getElementById("Email").value;
-            const subject = document.getElementById("Subject").value;
-            const message = document.getElementById("Message").value;
-
-            Email.send({
-                Host: "smtp.elasticemail.com",
-                Username: "anishshah9876@gmail.com",
-                Password: "1D9DDFBCF6FDC6DFC7BB9D9D2DA1DE5644DE",
-                To: "anishlegi7@gmail.com",
-                From: "anishshah9876@gmail.com",
-                Subject: "New Contact Form Enquiry",
-                Body: "User Email: " + email + "<br/>Subject: " + subject + "<br/>Message: " + message
-            }).then(function (message) {
-                alert(message);
-            }).catch(function (error) {
-                alert("There was an error sending the email: " + error);
-            });
-        }
-
-        form.addEventListener('submit', Mail());
-
-=======
         //function to send the message when click on button send
     const form = document.querySelector(".contact-form");
     function Mail(e) {
@@ -813,7 +782,6 @@
 
         //add the event Listener submit
         form.addEventListener('submit', Mail());
->>>>>>> 7b17ca6fc93c573f67a94047e37dbe4ddf8dd9cd
     </script>
 </body>
 
