@@ -48,7 +48,6 @@ window.addEventListener("scroll", scrollHeader)
 
 
 
-
 /*=============== TESTIMONIAL SWIPER ===============*/
 var swiper = new Swiper(".testimonial-wrapper", {
   spaceBetween: 30,
@@ -371,5 +370,19 @@ else if(whiteColor === "100%"){
   root.style.setProperty('--dark-color-lightness', '17%');
 }
 
+const heroSection = document.querySelector(".home")
+const footerElem = document.querySelector(".footer");
+
+const scrollElement = document.createElement("div");
+scrollElement.classList.add("scrollTop-style");
+scrollElement.innerHTML = `<ion-icon name = "arrow-up-outline" class = "scroll-top"</ion-icon>`;
+
+footerElem.after(scrollElement)
+
+const scrollTop=() => {
+  heroSection.scrollIntoView({behavior:"smooth"});
+
+};
+scrollElement.addEventListener("click",scrollTop);
 
 
