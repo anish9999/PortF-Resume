@@ -70,16 +70,18 @@
     /*========== Responsive Typography ==========*/
 
     /*========== Base ==========*/
+   
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-
     }
+     
 
     html {
       scroll-behavior: smooth;
     }
+
 
     body,
     button,
@@ -483,7 +485,73 @@
       color: var(--color-gray);
     }
 
+    /*==================Loading ===========*/
+    .Loading_Box {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        z-index: 99999;
+    }
 
+    .ring {
+        width: 200px;
+        height: 200px;
+        border: 0px solid #011015;
+        border-radius: 50%;
+        position: absolute;
+    }
+
+        .ring:nth-child(1) {
+            border-bottom-width: 8px;
+            border-color: rgb(255,0,255);
+            animation: rotate1 2s linear infinite;
+        }
+
+        .ring:nth-child(2) {
+            border-right-width: 8px;
+            border-color: rgb(0,247,255);
+            animation: rotate2 2s linear infinite;
+        }
+
+        .ring:nth-child(3) {
+            border-top-width: 8px;
+            border-color: rgb(0,255,13);
+            animation: rotate3 2s linear infinite;
+        }
+
+    @keyframes rotate1 {
+        0% {
+            transform: rotateX(35deg)rotateY(-45deg) rotateZ(0deg);
+        }
+
+        100% {
+            transform: rotateX(35deg)rotateY(-45deg) rotateZ(360deg);
+        }
+    }
+
+    @keyframes rotate2 {
+        0% {
+            transform: rotateX(50deg)rotateY(10deg) rotateZ(0deg);
+        }
+
+        100% {
+            transform: rotateX(50deg)rotateY(10deg) rotateZ(360deg);
+        }
+    }
+
+    @keyframes rotate3 {
+        0% {
+            transform: rotateX(35deg)rotateY(55deg) rotateZ(0deg);
+        }
+
+        100% {
+            transform: rotateX(35deg)rotateY(55deg) rotateZ(360deg);
+        }
+    }
     /*========== Services ==========*/
     .services .service-item {
       flex: 0 0 33.33%;
@@ -1023,7 +1091,7 @@
       height: 100%;
       padding: 1rem 1rem 1rem 0;
       background: none;
-      color: var(--color-dark);
+      color: rgb(122, 225, 233);
       outline: none;
       border: none;
       z-index: 1;
@@ -1071,55 +1139,6 @@
 
     .footer-text {
       text-align: center;
-    }
-
-
-
-    .scrollTop-style{
-      position: fixed;
-      right:  2%;
-      bottom: 5%;
-      z-index: 1;
-    }
-
-    .scroll-top{
-      width: 2.5rem;
-      height: 2.5rem;
-      background: var(--color-primary);
-      display: inline-block;
-      padding: 1.4rem 1.8rem;
-      position: relative;
-      color:white;
-      animation: water-wave 3s linear infinite;
-      border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
-      cursor: pointer;
-
-    }
-
-    .scroll-top::after{
-      content : "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-      width:90%;
-      height:90%;
-      border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
-      background-color: transparent;
-      border: 1px solid white;
-      animation: water-wave 3s linear infinite;
-    }
-
-    @keyframes water-wave {
-      0% {
-        border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
-      }
-      50%{
-        border-radius: 3% 97% 15% 85% / 72% 0% 100% 28%;
-      }
-      100%{
-        border-radius: 56% 44% 70% 30% /30% 54% 46% 70%;
-      }
     }
 
     /*========== Customize Theme ==========*/
@@ -1293,11 +1312,14 @@
       .about-img {
         flex: 0 0 100%;
         max-width: 100%;
+
+
       }
 
       .about-img {
         text-align: center;
         margin-bottom: var(--m-2-5);
+
       }
 
       .prices,
@@ -1305,6 +1327,7 @@
         flex: 0 0 50%;
         max-width: 50%;
         margin-bottom: var(--m-2-5);
+
       }
 
       .price-item.best {
@@ -1472,7 +1495,7 @@
      .result-content{
       max-width: 100%;
       height: max-content;
-      background-color: rgb(4, 4, 4);
+      background-color: blue;
      }
 
 

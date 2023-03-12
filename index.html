@@ -16,9 +16,16 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>My portfolio website</title>
+ 
+
 </head>
 
-<body>
+<body onload="myFunction()">
+    <div class="Loading_Box">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+    </div>
     <!--=============== HEADER ===============-->
     <header class="header" id="header">
         <!--nav-->
@@ -77,19 +84,26 @@
                 <div class="intro">
                     <!--avatar image-->
                     <a href="aboutme.html">
-                        <img src="assets/img/Mypic 1.png" alt="Anish" height="300" width=200></a>
+                        <img src="assets/img/Mypic 1.png" alt="Anish" height="300" width=200>
+                    </a>
                     <!--info-->
                     <h1>Anish Shah</h1>
                     <span>I'm a <span class="info-text">Front-End developer</span></span>
                     <!---social icons-->
                     <ul class="social-icons">
-                        <li><a href="https://www.instagram.com/an.ish6743/"><i
-                                    class="lni lni-instagram-original"></i></a></li>
+                        <li>
+                            <a href="https://www.instagram.com/an.ish6743/">
+                                <i class="lni lni-instagram-original"></i>
+                            </a>
+                        </li>
                         <li><a href="#"><i class="lni lni-twitter-original"></i></a></li>
                         <li><a href="https://github.com/anish9999"><i class="lni lni-github-original"></i></a></li>
                         <li><a href="#"><i class="lni lni-behance-original"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/anish-shah-0bb754227/"><i
-                                    class="lni lni-linkedin-original"></i></a></li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/anish-shah-0bb754227/">
+                                <i class="lni lni-linkedin-original"></i>
+                            </a>
+                        </li>
                     </ul>
                     <!--button-->
                     <div><a href="https://shahanish1.netlify.app" class="btn btn-default">Hire me</a></div>
@@ -98,7 +112,7 @@
 
                     <div class="scroll-down">
                         <a href="#" class="mouse-wrapper">
-                          
+
                             <span class="mouse">
                                 <span class="wheel"></span>
                             </span>
@@ -122,7 +136,8 @@
                             <div class="row">
                                 <div class="about-text padd-15">
                                     <!--about text-->
-                                    <p>I am Anish Shah,web developer from Kathmandu, Nepal. I have rich
+                                    <p>
+                                        I am Anish Shah,web developer from Kathmandu, Nepal. I have rich
                                         Experience in web site design and building and customization,also I am good
                                         at React
                                     </p>
@@ -137,7 +152,7 @@
                                             <h4>Development</h4>
                                             <div class="progress">
                                                 <div class="progress-in"
-                                                    style="width: 95%; background: rgb(255,209,92);"></div>
+                                                     style="width: 95%; background: rgb(255,209,92);"></div>
                                                 <div class="skill-percent">95%</div>
                                             </div>
                                         </div>
@@ -146,7 +161,7 @@
                                             <h4>Figma Design</h4>
                                             <div class="progress">
                                                 <div class="progress-in"
-                                                    style="width: 75%; background: rgb(255,76,96);"></div>
+                                                     style="width: 75%; background: rgb(255,76,96);"></div>
                                                 <div class="skill-percent">75%</div>
                                             </div>
                                         </div>
@@ -155,7 +170,7 @@
                                             <h4>UI/UX Design</h4>
                                             <div class="progress">
                                                 <div class="progress-in"
-                                                    style="width: 85%; background: rgb(25, 166, 221);"></div>
+                                                     style="width: 85%; background: rgb(25, 166, 221);"></div>
                                                 <div class="skill-percent">85%</div>
                                             </div>
                                         </div>
@@ -213,8 +228,10 @@
                         <div class="service-item-inner" style="background: rgb(108,108,229);">
                             <img src="assets/img/service-1.svg" alt="" srcset="">
                             <h3>UI/UX design</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi cum eius error
-                                delectus. Eaque saepe, ullam architecto perspiciatis quibusdam quas dicta!</p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi cum eius error
+                                delectus. Eaque saepe, ullam architecto perspiciatis quibusdam quas dicta!
+                            </p>
                         </div>
                     </div>
                     <!----service item-->
@@ -233,8 +250,10 @@
                         <div class="service-item-inner" style="background: rgb(249,123,139);">
                             <img src="assets/img/cell-phone.png" alt="" srcset="" style="top:-0.6rem; height: 100px; width: 130px;">
                             <h3>Android Development</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi cum eius error
-                                delectus. Eaque saepe, ullam architecto perspiciatis quibusdam quas dicta!</p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi cum eius error
+                                delectus. Eaque saepe, ullam architecto perspiciatis quibusdam quas dicta!
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -258,7 +277,7 @@
                             <div class="timeline-box">
                                 <div class="timeline">
 
-                                    
+
                                     <!---timeline item-->
                                     <div class="timeline-item">
                                         <i class="lni lni-graduation timeline-icon"></i>
@@ -268,11 +287,13 @@
                                         <h3 class="timeline-title">
                                             Bachelor's Degree
                                         </h3>
-                                        <p class="timeline-text">I am earning my bachelor's degree from Lalitpur Engineering College situated in chakupat,lalitpur,
-                                             which provided me with a strong foundation in engineering principles and practical skills.</p>
+                                        <p class="timeline-text">
+                                            I am earning my bachelor's degree from Lalitpur Engineering College situated in chakupat,lalitpur,
+                                            which provided me with a strong foundation in engineering principles and practical skills.
+                                        </p>
                                     </div>
 
-                                  
+
 
                                     <!---timeline item-->
                                     <div class="timeline-item">
@@ -283,8 +304,10 @@
                                         <h3 class="timeline-title">
                                             NEB's Degree
                                         </h3>
-                                        <p class="timeline-text">I completed my +2 degree at National Integrated College in Dillibazar, Kathmandu, 
-                                            where I gained a solid academic foundation and prepared for higher education.</p>
+                                        <p class="timeline-text">
+                                            I completed my +2 degree at National Integrated College in Dillibazar, Kathmandu,
+                                            where I gained a solid academic foundation and prepared for higher education.
+                                        </p>
                                     </div>
 
 
@@ -297,9 +320,11 @@
                                         <h3 class="timeline-title">
                                             SEE's Degree
                                         </h3>
-                                        <p class="timeline-text">I earned my SEE degree from Rising Rays Boarding School situated in  Newplaza, Kathmandu, 
-                                            which marked the completion of my secondary education and prepared me for higher studies.</p>
-                                    </div> 
+                                        <p class="timeline-text">
+                                            I earned my SEE degree from Rising Rays Boarding School situated in  Newplaza, Kathmandu,
+                                            which marked the completion of my secondary education and prepared me for higher studies.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -318,8 +343,10 @@
                                         <h3 class="timeline-title">
                                             Web Designer
                                         </h3>
-                                        <p class="timeline-text">I am a web designer with a strong understanding of design principles, color theory, typography, and user experience design. Using industry-standard design tools, 
-                                            I create visually appealing and user-friendly websites that meet the needs of my clients. </p>
+                                        <p class="timeline-text">
+                                            I am a web designer with a strong understanding of design principles, color theory, typography, and user experience design. Using industry-standard design tools,
+                                            I create visually appealing and user-friendly websites that meet the needs of my clients.
+                                        </p>
                                     </div>
 
                                     <!---timeline item-->
@@ -331,8 +358,10 @@
                                         <h3 class="timeline-title">
                                             Front-End Developer
                                         </h3>
-                                        <p class="timeline-text">I specialize in turning design mockups into functional and visually appealing user interfaces using HTML, CSS, and JavaScript. 
-                                            I have a strong understanding of web development technologies, frameworks, and libraries like React. </p>
+                                        <p class="timeline-text">
+                                            I specialize in turning design mockups into functional and visually appealing user interfaces using HTML, CSS, and JavaScript.
+                                            I have a strong understanding of web development technologies, frameworks, and libraries like React.
+                                        </p>
                                     </div>
 
                                     <!---timeline item-->
@@ -344,8 +373,10 @@
                                         <h3 class="timeline-title">
                                             Back-End Developer
                                         </h3>
-                                        <p class="timeline-text">I specialize in server-side development using Python, and Java with frameworks like Django, and Spring. I collaborate with frontend developers 
-                                            and database administrators to ensure smooth and efficient web application functionality.</p>
+                                        <p class="timeline-text">
+                                            I specialize in server-side development using Python, and Java with frameworks like Django, and Spring. I collaborate with frontend developers
+                                            and database administrators to ensure smooth and efficient web application functionality.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -427,7 +458,6 @@
                             <span class="term">Android Development</span>
                             <h3 class="portfolio-item-title">Project Management Illustrations</h3>
                             <span class="more-button">&hellip;</span>
-
                         </div>
                     </div>
 
@@ -443,7 +473,6 @@
                             <span class="term">Websites</span>
                             <h3 class="portfolio-item-title">Onboaeding Motivation</h3>
                             <span class="more-button">&hellip;</span>
-
                         </div>
                     </div>
 
@@ -459,7 +488,6 @@
                             <span class="term">UI/UX design</span>
                             <h3 class="portfolio-item-title">Figma Design</h3>
                             <span class="more-button">&hellip;</span>
-
                         </div>
                     </div>
 
@@ -523,8 +551,10 @@
                             </div>
                             <h3>John Doe</h3>
                             <span class="subtitle">Product designer at dribble</span>
-                            <div class="comment">I enjoy working with the theme and learn so much.You guys make the
-                                process fun and interesting .Goodluck! ✌✌</div>
+                            <div class="comment">
+                                I enjoy working with the theme and learn so much.You guys make the
+                                process fun and interesting .Goodluck! ✌✌
+                            </div>
                         </div>
 
                         <!---testimonial item-->
@@ -535,8 +565,10 @@
                             </div>
                             <h3>John Doe</h3>
                             <span class="subtitle">Product designer at dribble</span>
-                            <div class="comment">I enjoy working with the theme and learn so much.You guys make the
-                                process fun and interesting .Goodluck! 🎭</div>
+                            <div class="comment">
+                                I enjoy working with the theme and learn so much.You guys make the
+                                process fun and interesting .Goodluck! 🎭
+                            </div>
                         </div>
 
 
@@ -548,8 +580,10 @@
                             </div>
                             <h3>John Doe</h3>
                             <span class="subtitle">Product designer at dribble</span>
-                            <div class="comment">I enjoy working with the theme and learn so much.You guys make the
-                                process fun and interesting .Goodluck! 👍👍</div>
+                            <div class="comment">
+                                I enjoy working with the theme and learn so much.You guys make the
+                                process fun and interesting .Goodluck! 👍👍
+                            </div>
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -650,7 +684,7 @@
                         </div>
                     </div>
                     <!---contact form-->
-                    <form class="contact-form padd-15"  >
+                    <form class="contact-form padd-15">
                         <div class="contact-inputs">
                             <!-----contact content-->
                             <div class="contact-content">
@@ -667,7 +701,7 @@
                             </div>
 
                             <!-----contact content-->
-                            <div class="contact-content contact-area" >
+                            <div class="contact-content contact-area">
                                 <textarea name="" cols="50" rows="10" class="contact-input" id="Message"></textarea>
 
                                 <label for="" class="contact-label">Message</label>
@@ -747,15 +781,33 @@
     <!-- Initialize Swiper -->
     <!--=============== SWIPER JS ===============-->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!--=============== JS ===============-->
     <script src="assets/js/main.js"></script>
+
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
     <script>
+    var preloader = document.querySelector('.Loading_Box');
+    window.addEventListener("load", function myFunction(){
+        preloader.style.display = "none";
+    });
+</script>
+<!-- <script >
+     jQuery(window).on("load", function() {
+  // set a timeout to delay the display of the main content
+  setTimeout(function() {
+    // hide the preloader
+    jQuery('.Loading_Box').fadeOut();
+    // show the main content
+    jQuery('.main-content').fadeIn();
+  }, 5000); // set the timeout duration in milliseconds (in this case, 2 seconds)
+});
+</script> -->
+  <script>
 
-        //function to send the message when click on button send
+    //function to send the message when click on button send
     const form = document.querySelector(".contact-form");
     function Mail(e) {
         e.preventDefault();
@@ -764,22 +816,24 @@
             subject = document.getElementById("Subject"),
             Message = document.getElementById("Message");
 
-            Email.send({
+        Email.send({
             Host: "smtp.elasticemail.com",
             Username: "anishshah9876@gmail.com",
             Password: "1D9DDFBCF6FDC6DFC7BB9D9D2DA1DE5644DE",
             To: "anishlegi7@gmail.com",
             From: "anishshah9876@gmail.com",
             Subject: "New Contact Form Enquiry",
-            Body: " User Email:"+ email + "<br/> Subject:" + subject + "<br/> Message:"  + Message, 
-            }).then(
-                message => alert(message)
-            );
-        }
+            Body: " User Email:" + email.value + "<br/> Subject:" + subject.value + "<br/> Message:" + Message.value,
+        }).then(
+            message => alert(message)
+        );
+    }
 
-        //add the event Listener submit
-        form.addEventListener('submit', Mail());
-    </script>
+    //add the event Listener submit
+    form.addEventListener('submit', Mail);
+</script>
+
+
 </body>
 
 </html>
