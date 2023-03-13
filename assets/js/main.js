@@ -370,6 +370,8 @@ else if(whiteColor === "100%"){
   root.style.setProperty('--dark-color-lightness', '17%');
 }
 
+
+// Scroll to the Top
 const heroSection = document.querySelector(".home")
 const footerElem = document.querySelector(".footer");
 
@@ -381,7 +383,6 @@ footerElem.after(scrollElement)
 
 const scrollTop=() => {
   heroSection.scrollIntoView({behavior:"smooth"});
-
 };
 scrollElement.addEventListener("click",scrollTop);
 
