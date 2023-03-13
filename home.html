@@ -16,15 +16,17 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>My portfolio website</title>
+    <script src= "https://smtpjs.com/v3/smtp.js"></script>
 
 </head>
 
-<body onload="myfunction()" id="content">
+<body onload="myFunction()">
     <div class="Loading_Box">
         <div class="ring"></div>
         <div class="ring"></div>
         <div class="ring"></div>
     </div>
+
     <!--=============== HEADER ===============-->
     <header class="header" id="header">
         <!--nav-->
@@ -74,7 +76,7 @@
         </nav>
     </header>
     <!--=============== MAIN ===============-->
-    <main class="main-content" >
+    <main class="main-content">
         <!--=============== HOME ===============-->
         <section class="home" id="home">
             <div class="container">
@@ -83,19 +85,26 @@
                 <div class="intro">
                     <!--avatar image-->
                     <a href="aboutme.html">
-                        <img src="assets/img/Mypic 1.png" alt="Anish" height="300" width=200></a>
+                        <img src="assets/img/Mypic 1.png" alt="Anish" height="300" width=200>
+                    </a>
                     <!--info-->
                     <h1>Anish Shah</h1>
                     <span>I'm a <span class="info-text">Front-End developer</span></span>
                     <!---social icons-->
                     <ul class="social-icons">
-                        <li><a href="https://www.instagram.com/an.ish6743/"><i
-                                    class="lni lni-instagram-original"></i></a></li>
+                        <li>
+                            <a href="https://www.instagram.com/an.ish6743/">
+                                <i class="lni lni-instagram-original"></i>
+                            </a>
+                        </li>
                         <li><a href="#"><i class="lni lni-twitter-original"></i></a></li>
                         <li><a href="https://github.com/anish9999"><i class="lni lni-github-original"></i></a></li>
                         <li><a href="#"><i class="lni lni-behance-original"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/anish-shah-0bb754227/"><i
-                                    class="lni lni-linkedin-original"></i></a></li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/anish-shah-0bb754227/">
+                                <i class="lni lni-linkedin-original"></i>
+                            </a>
+                        </li>
                     </ul>
                     <!--button-->
                     <div><a href="https://shahanish1.netlify.app" class="btn btn-default">Hire me</a></div>
@@ -104,7 +113,7 @@
 
                     <div class="scroll-down">
                         <a href="#" class="mouse-wrapper">
-                          
+
                             <span class="mouse">
                                 <span class="wheel"></span>
                             </span>
@@ -128,7 +137,8 @@
                             <div class="row">
                                 <div class="about-text padd-15">
                                     <!--about text-->
-                                    <p>I am Anish Shah,web developer from Kathmandu, Nepal. I have rich
+                                    <p>
+                                        I am Anish Shah,web developer from Kathmandu, Nepal. I have rich
                                         Experience in web site design and building and customization,also I am good
                                         at React
                                     </p>
@@ -143,7 +153,7 @@
                                             <h4>Development</h4>
                                             <div class="progress">
                                                 <div class="progress-in"
-                                                    style="width: 95%; background: rgb(255,209,92);"></div>
+                                                     style="width: 95%; background: rgb(255,209,92);"></div>
                                                 <div class="skill-percent">95%</div>
                                             </div>
                                         </div>
@@ -152,7 +162,7 @@
                                             <h4>Figma Design</h4>
                                             <div class="progress">
                                                 <div class="progress-in"
-                                                    style="width: 75%; background: rgb(255,76,96);"></div>
+                                                     style="width: 75%; background: rgb(255,76,96);"></div>
                                                 <div class="skill-percent">75%</div>
                                             </div>
                                         </div>
@@ -161,7 +171,7 @@
                                             <h4>UI/UX Design</h4>
                                             <div class="progress">
                                                 <div class="progress-in"
-                                                    style="width: 85%; background: rgb(25, 166, 221);"></div>
+                                                     style="width: 85%; background: rgb(25, 166, 221);"></div>
                                                 <div class="skill-percent">85%</div>
                                             </div>
                                         </div>
@@ -219,8 +229,10 @@
                         <div class="service-item-inner" style="background: rgb(108,108,229);">
                             <img src="assets/img/service-1.svg" alt="" srcset="">
                             <h3>UI/UX design</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi cum eius error
-                                delectus. Eaque saepe, ullam architecto perspiciatis quibusdam quas dicta!</p>
+                            <p>
+                                I am a UI/Ux designer with a strong understanding of design principles, color theory, typography, and user experience design. Using industry-standard design tools,
+                                I create visually appealing and user-friendly websites that meet the needs of my clients.
+                            </p>
                         </div>
                     </div>
                     <!----service item-->
@@ -229,8 +241,8 @@
                             <img src="assets/img/service-2.svg" alt="" srcset="">
                             <h3>Web Development</h3>
                             <p>
-                                I am a web designer with a strong understanding of design principles, color theory, typography, and user experience design. Using industry-standard design tools,
-                                I create visually appealing and user-friendly websites that meet the needs of my clients.
+                                I specialize in turning design mockups into functional and visually appealing user interfaces using HTML, CSS, and JavaScript.
+                                            I have a strong understanding of web development technologies, frameworks, and libraries like React.
                             </p>
                         </div>
                     </div>
@@ -239,8 +251,10 @@
                         <div class="service-item-inner" style="background: rgb(249,123,139);">
                             <img src="assets/img/cell-phone.png" alt="" srcset="" style="top:-0.6rem; height: 100px; width: 130px;">
                             <h3>Android Development</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi cum eius error
-                                delectus. Eaque saepe, ullam architecto perspiciatis quibusdam quas dicta!</p>
+                            <p>
+                               I am a App developer with strong foundation of flutter,I makes app that are functional, convinent and  human interactive through flutter and firebase.
+                               I create a well developed apps.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -264,7 +278,7 @@
                             <div class="timeline-box">
                                 <div class="timeline">
 
-                                    
+
                                     <!---timeline item-->
                                     <div class="timeline-item">
                                         <i class="lni lni-graduation timeline-icon"></i>
@@ -274,11 +288,13 @@
                                         <h3 class="timeline-title">
                                             Bachelor's Degree
                                         </h3>
-                                        <p class="timeline-text">I am earning my bachelor's degree from Lalitpur Engineering College situated in chakupat,lalitpur,
-                                             which provided me with a strong foundation in engineering principles and practical skills.</p>
+                                        <p class="timeline-text">
+                                            I am a fourth year Student.I am earning my bachelor's degree on computer technology(BCT) from Lalitpur Engineering College situated in chakupat,lalitpur,
+                                            which provided me with a strong foundation in engineering principles and practical skills.
+                                        </p>
                                     </div>
 
-                                  
+
 
                                     <!---timeline item-->
                                     <div class="timeline-item">
@@ -289,8 +305,10 @@
                                         <h3 class="timeline-title">
                                             NEB's Degree
                                         </h3>
-                                        <p class="timeline-text">I completed my +2 degree at National Integrated College in Dillibazar, Kathmandu, 
-                                            where I gained a solid academic foundation and prepared for higher education.</p>
+                                        <p class="timeline-text">
+                                            I completed my +2 degree on science at National Integrated College in Dillibazar, Kathmandu,
+                                            where I gained a solid academic foundation and prepared for higher education.
+                                        </p>
                                     </div>
 
 
@@ -303,9 +321,11 @@
                                         <h3 class="timeline-title">
                                             SEE's Degree
                                         </h3>
-                                        <p class="timeline-text">I earned my SEE degree from Rising Rays Boarding School situated in  Newplaza, Kathmandu, 
-                                            which marked the completion of my secondary education and prepared me for higher studies.</p>
-                                    </div> 
+                                        <p class="timeline-text">
+                                            I earned my SEE qualification from Rising Rays Boarding School situated in  Newplaza, Kathmandu,
+                                            which marked the completion of my secondary education and prepared me for higher studies.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -319,39 +339,45 @@
                                     <div class="timeline-item">
                                         <i class="lni lni-briefcase timeline-icon"></i>
                                         <h3 class="timeline-date">
-                                            <i class="lni lni-calendar"></i> 2019- present
+                                            <i class="lni lni-calendar"></i> 2022- present
                                         </h3>
                                         <h3 class="timeline-title">
-                                            Web Designer
+                                            ML Developer (Yatraa)
                                         </h3>
-                                        <p class="timeline-text">I am a web designer with a strong understanding of design principles, color theory, typography, and user experience design. Using industry-standard design tools, 
-                                            I create visually appealing and user-friendly websites that meet the needs of my clients. </p>
+                                        <p class="timeline-text">
+                                            Currently being work on  my project Yatraa for about 1 year  as a  Data Scientist .Yatraa is basically vehicle tracking and recommending system.
+                                            A comfort System for the passenger to travel publicly.
+                                        </p>
                                     </div>
 
                                     <!---timeline item-->
                                     <div class="timeline-item">
                                         <i class="lni lni-briefcase timeline-icon"></i>
                                         <h3 class="timeline-date">
-                                            <i class="lni lni-calendar"></i> 2019- 2016
+                                            <i class="lni lni-calendar"></i> 2022- 2021
                                         </h3>
                                         <h3 class="timeline-title">
-                                            Front-End Developer
+                                            Full-Stack Developer(ReMIS)
                                         </h3>
-                                        <p class="timeline-text">I specialize in turning design mockups into functional and visually appealing user interfaces using HTML, CSS, and JavaScript. 
-                                            I have a strong understanding of web development technologies, frameworks, and libraries like React. </p>
+                                        <p class="timeline-text">
+                                            ReMIS is a web application which overall deals to search and  store result of student within a system . External insitute as IOU can directly send result to student
+                                            which reduces the involvement of internal institute.
+                                        </p>
                                     </div>
 
                                     <!---timeline item-->
                                     <div class="timeline-item">
                                         <i class="lni lni-briefcase timeline-icon"></i>
                                         <h3 class="timeline-date">
-                                            <i class="lni lni-calendar"></i> 2001- 2015
+                                            <i class="lni lni-calendar"></i> 2019- 2020
                                         </h3>
                                         <h3 class="timeline-title">
-                                            Back-End Developer
+                                            Content-Writer(Slash Plus)
                                         </h3>
-                                        <p class="timeline-text">I specialize in server-side development using Python, and Java with frameworks like Django, and Spring. I collaborate with frontend developers 
-                                            and database administrators to ensure smooth and efficient web application functionality.</p>
+                                        <p class="timeline-text">
+                                            Content Research,Project Management,Writing blog posts,articles, newsletters, social media updates, and other forms
+                                            of digital content  were some of the duties i performed as content writer.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -366,7 +392,7 @@
         <section class="section pricing" id="pricing">
             <div class="container">
                 <!--section title-->
-                <h2 class="section-title padd-15">Pricing Plans</h2>
+                <h2 class="section-title padd-15">Pricing Plans For Freelancing</h2>
                 <div class="row">
                     <!--prices----->
                     <div class="prices">
@@ -376,7 +402,7 @@
                             <p>A simple option but powerful to manage your business</p>
                             <p>Email suppport</p>
                             <h3 class="price"><em>$</em>9<span>Month</span></h3>
-                            <a href="#" class="btn btn-default">Get Started</a>
+                            <a href="./payment.html" class="btn btn-default " id="Pay">Get Started</a>
                         </div>
                     </div>
 
@@ -389,7 +415,8 @@
                             <p>Unlimited product including app integration and more features</p>
                             <p>Email suppport</p>
                             <h3 class="price"><em>$</em>49<span>Month</span></h3>
-                            <a href="#" class="btn btn-default">Get Started</a>
+                            <a href="./payment.html" class="btn btn-default" id ="Pay" >Get Started</a>
+                 
                         </div>
                     </div>
 
@@ -401,7 +428,7 @@
                             <p>A wise option for large companies and individuals</p>
                             <p>24/7 support</p>
                             <h3 class="price"><em>$</em>9<span>Month</span></h3>
-                            <a href="#" class="btn btn-default">Get Started</a>
+                            <a href="./payment.html" class="btn btn-default" id="Pay">Get Started</a>
                         </div>
                     </div>
                 </div>
@@ -473,8 +500,8 @@
                                 <img src="assets/img/4.svg" alt="">
                                 <div class="mask"></div>
                             </div>
-                            <span class="term"> bus tracking</span>
-                            <h3 class="portfolio-item-title">Yatra</h3>
+                            <span class="term">Bus tracking and Recommending System</span>
+                            <h3 class="portfolio-item-title">Yatraa</h3>
                             <span class="more-button">&hellip;</span>
 
                         </div>
@@ -482,6 +509,7 @@
 
                     <!---portfolio -item-->
                     <div class="portfolio-item padd-15" data-category="casestudy">
+                        
                         <div class="portfolio-item-inner">
                             <div class="portfolio-item-thumbnail">
                                 <img src="assets/img/5.svg" alt="">
@@ -489,9 +517,11 @@
                             </div>
                             <span class="term">Machine learning</span>
                             <h3 class="portfolio-item-title">Brainstroming projects</h3>
-                            <span class="more-button">&hellip;</span>
-
+                            <a href="https://pdfhost.io/v/Sov0qkKi8_YOLOisaConvolutionalNeuralNetwork_1">
+                                <span class="more-button">&hellip;</span>
+                            </a>
                         </div>
+                        
                     </div>
 
                     <!---portfolio -item-->
@@ -526,8 +556,10 @@
                             </div>
                             <h3>John Doe</h3>
                             <span class="subtitle">Product designer at dribble</span>
-                            <div class="comment">I enjoy working with the theme and learn so much.You guys make the
-                                process fun and interesting .Goodluck! ✌✌</div>
+                            <div class="comment">
+                                I enjoy working with the theme and learn so much.You guys make the
+                                process fun and interesting .Goodluck! ✌✌
+                            </div>
                         </div>
 
                         <!---testimonial item-->
@@ -538,8 +570,10 @@
                             </div>
                             <h3>John Doe</h3>
                             <span class="subtitle">Product designer at dribble</span>
-                            <div class="comment">I enjoy working with the theme and learn so much.You guys make the
-                                process fun and interesting .Goodluck! 🎭</div>
+                            <div class="comment">
+                                I enjoy working with the theme and learn so much.You guys make the
+                                process fun and interesting .Goodluck! 🎭
+                            </div>
                         </div>
 
 
@@ -551,8 +585,10 @@
                             </div>
                             <h3>John Doe</h3>
                             <span class="subtitle">Product designer at dribble</span>
-                            <div class="comment">I enjoy working with the theme and learn so much.You guys make the
-                                process fun and interesting .Goodluck! 👍👍</div>
+                            <div class="comment">
+                                I enjoy working with the theme and learn so much.You guys make the
+                                process fun and interesting .Goodluck! 👍👍
+                            </div>
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -653,7 +689,7 @@
                         </div>
                     </div>
                     <!---contact form-->
-                    <form class="contact-form padd-15"  >
+                    <form action= "#" class="contact-form padd-15">
                         <div class="contact-inputs">
                             <!-----contact content-->
                             <div class="contact-content">
@@ -670,17 +706,15 @@
                             </div>
 
                             <!-----contact content-->
-                            <div class="contact-content contact-area" >
+                            <div class="contact-content contact-area">
                                 <textarea name="" cols="50" rows="10" class="contact-input" id="Message"></textarea>
-
                                 <label for="" class="contact-label">Message</label>
                                 <span></span>
                             </div>
 
                         </div>
-                        <button type="submit" class="btn btn-default">Send Message</button>
+                        <input type="submit" id = "submit" class="btn btn-default">                   
                     </form>
-
                 </div>
             </div>
         </section>
@@ -693,7 +727,6 @@
                 </div>
             </div>
         </footer>
-
     </main>
     <!--=============== Theme Customize ===============-->
     <div class="customize-theme">
@@ -752,42 +785,68 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
     <!--=============== JS ===============-->
-    <script src="assets/js/main.js"></script>
-    <script src="./loading.html"></script>
+
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--=============== JS ===============-->
+
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+    
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+      integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw="
+      crossorigin="anonymous"></script>
     <script>
+        var preloader = document.querySelector('.Loading_Box');
+        window.addEventListener("load", function myFunction() {
+            preloader.style.display = "none";
+        });
+    </script>
+    <script src="assets/js/payment.js"></script>
+    <script src="assets/js/main.js"></script>
 
-        //function to send the message when click on button send
-    const form = document.querySelector(".contact-form");
-    function Mail(e) {
-        e.preventDefault();
 
-        const email = document.getElementById("Email"),
-            subject = document.getElementById("Subject"),
-            Message = document.getElementById("Message");
 
-            Email.send({
-            Host: "smtp.elasticemail.com",
-            Username: "anishshah9876@gmail.com",
-            Password: "1D9DDFBCF6FDC6DFC7BB9D9D2DA1DE5644DE",
-            To: "anishlegi7@gmail.com",
-            From: "anishshah9876@gmail.com",
-            Subject: "New Contact Form Enquiry",
-            Body: " User Email:"+ email + "<br/> Subject:" + subject + "<br/> Message:"  + Message, 
-            }).then(
-                message => alert(message)
-            );
-        }
+    <script>
+        // const subject = document.getElementById("Subject");
+        // const message = document.getElementById("Message");
+        // const email = document.getElementById("Email");
+        // const submit = document.getElementsByClassName("contact-form padd-15")[0];
 
-        //add the event Listener submit
-        form.addEventListener('submit', Mail());
+        // submit.addEventListener('submit',(e)=>{
+        //     e.preventdefault();
+        //     console.log("Clicked");
+        // });
+
+            //function to send the message when click on button send
+            const form = document.querySelector(".contact-form");
+            function Mail(e) {
+                e.preventDefault();
+                subject = document.getElementById("Subject"),
+                message = document.getElementById("Message");
+                email = document.getElementById("Email");
+
+                Email.send({    
+                SecureToken: "10ea37b7-82b4-497a-9f16-008b6d22b3ff ",       
+                To: "anishshah9988@gmail.com",
+                From: "anishshah9988@gmail.com",
+                Subject: "New Contact Form Enquiry",
+                Body: " User Email:" + email.value + "<br /> Subject:" + subject.value + "<br /> Message:" + message.value,
+                }).then(
+                            message => alert(message)
+               );
+                 }
+             //add the event Listener submit
+         form.addEventListener('submit', Mail);
     </script>
 
-
 </body>
-
+{% comment %} Password: "1D9DDFBCF6FDC6DFC7BB9D9D2DA1DE5644DE", {% endcomment %}
 </html>
 
 <!---2:31:00pm--->

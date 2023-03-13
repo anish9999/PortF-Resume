@@ -1141,6 +1141,53 @@
       text-align: center;
     }
 
+
+    .scrollTop-style{
+      position: fixed;
+      right:  2%;
+      bottom: 5%;
+      z-index: 1;
+    }
+
+    .scroll-top{
+      width: 2.5rem;
+      height: 2.5rem;
+      background: var(--color-primary);
+      display: inline-block;
+      padding: 1.4rem 1.8rem;
+      position: relative;
+      color:white;
+      animation: water-wave 3s linear infinite;
+      border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+      cursor: pointer;
+
+    }
+
+    .scroll-top::after{
+      content : "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width:90%;
+      height:90%;
+      border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+      background-color: transparent;
+      border: 1px solid white;
+      animation: water-wave 3s linear infinite;
+    }
+
+    @keyframes water-wave {
+      0% {
+        border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+      }
+      50%{
+        border-radius: 3% 97% 15% 85% / 72% 0% 100% 28%;
+      }
+      100%{
+        border-radius: 56% 44% 70% 30% /30% 54% 46% 70%;
+      }
+    }
     /*========== Customize Theme ==========*/
     .customize-theme {
       background: rgba(0, 0, 0, .4);
